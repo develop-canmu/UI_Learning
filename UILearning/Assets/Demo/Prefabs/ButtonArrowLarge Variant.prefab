@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3442398809606683859, guid: f462215c6800a864a95a6debe2bad2a0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 92
+      objectReference: {fileID: 0}
+    - target: {fileID: 3442398809606683859, guid: f462215c6800a864a95a6debe2bad2a0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 144
+      objectReference: {fileID: 0}
     - target: {fileID: 4817852094500308038, guid: f462215c6800a864a95a6debe2bad2a0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -91,6 +99,14 @@ PrefabInstance:
     - target: {fileID: 6488750481735425649, guid: f462215c6800a864a95a6debe2bad2a0, type: 3}
       propertyPath: m_Name
       value: ButtonArrowLarge Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6561221153340276891, guid: f462215c6800a864a95a6debe2bad2a0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 92
+      objectReference: {fileID: 0}
+    - target: {fileID: 6561221153340276891, guid: f462215c6800a864a95a6debe2bad2a0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 144
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
