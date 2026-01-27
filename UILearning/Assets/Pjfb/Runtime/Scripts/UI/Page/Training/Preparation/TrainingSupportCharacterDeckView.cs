@@ -332,8 +332,17 @@ namespace Pjfb.Training
             {
                 long id = adviserIds[i];
                 UserDataChara chara = UserDataManager.Instance.chara.Find(id);
+                
+                bool isImpossible = false;
+                // アドバイザーが重複できるか
+                if (DeckUtility.AllowDuplicateAdviser() == false)
+                {
+                    // 育成対象と同じキャラは編成不可
+                    isImpossible = id != DeckUtility.EmptyDeckSlotId && trainingParentCharId == CharacterUtility.UserCharIdToParentId(id);
+                }
+                
                 // 編成不可
-                adviserCharacters[i].SetImpossible(id != DeckUtility.EmptyDeckSlotId && trainingParentCharId == CharacterUtility.UserCharIdToParentId(id));
+                adviserCharacters[i].SetImpossible(isImpossible);
                 // 特攻
                 adviserCharacters[i].SetSpecialAttack(id != DeckUtility.EmptyDeckSlotId && CharacterUtility.IsTrainingScenarioSpAttackCharacter(chara.MChara.id, chara.level, arguments.TrainingScenarioId));
                 // UCharId
@@ -380,6 +389,9 @@ namespace Pjfb.Training
                         long id = memberIds[i];
                         if(id == DeckUtility.EmptyDeckSlotId)continue;
                         if(DeckData.GetMemberType(i) == DeckMemberType.UEquipment)continue;
+                        var uChara = UserDataManager.Instance.chara.Find(id);
+                        // アドバイザーと重複できる
+                        if (DeckUtility.AllowDuplicateAdviser() && uChara.CardType == CardType.Adviser) continue;
                         
                         if(friendParentId == CharacterUtility.UserCharIdToParentId(id))
                         {

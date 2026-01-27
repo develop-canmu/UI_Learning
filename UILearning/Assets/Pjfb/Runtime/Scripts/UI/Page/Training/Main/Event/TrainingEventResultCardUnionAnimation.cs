@@ -227,8 +227,6 @@ namespace Pjfb
             isPlayingEffect = false;
             // 演出完了後はスキップボタンを切る
             nextButton.gameObject.SetActive(false);
-
-            await WaitCloseEffect();
         }
         
 
@@ -301,20 +299,6 @@ namespace Pjfb
                 {
                 }
             }
-        }
-
-        private async UniTask WaitCloseEffect()
-        {
-            // 通常時は自動送りないのでボタン側に処理任せる
-            if (effectMode == EffectMode.Normal)
-            {
-                return;
-            }
-            
-            // 次の処理まで待機
-            await WaitNextEffect();
-            // 終了時の処理を呼ぶ 
-            OnClickChallenge();
         }
 
         /// <summary> 指定カードのインスピレーション演出Idを取得 </summary>

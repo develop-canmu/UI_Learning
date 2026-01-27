@@ -124,7 +124,7 @@ namespace Pjfb.Training
                 inspirationButtonRoot.SetActive( true );
                 // インスピブースト
                 long inspirationBoostLv = mainArguments.GetInspirationLv(out _).level;
-                inspirationBoostLvView.gameObject.SetActive(true);
+                inspirationBoostLvView.gameObject.SetActive(mainArguments.EnableInspirationBoost());
                 inspirationBoostLvView.SetValue( inspirationBoostLv );
             }
             else

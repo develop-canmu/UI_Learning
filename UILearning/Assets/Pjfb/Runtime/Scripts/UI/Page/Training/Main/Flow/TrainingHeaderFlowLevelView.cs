@@ -263,6 +263,7 @@ namespace Pjfb.Training
             {
                 // 最大レベル時のポイントスキップログ
                 adv.AddMessageLog(string.Empty, StringValueAssetLoader.Instance["training.log.flow_point.skipped_max_level"], 0);
+                onComplete?.Invoke();
                 return;
             }
             

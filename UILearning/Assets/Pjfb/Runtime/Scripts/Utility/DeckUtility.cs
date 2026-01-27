@@ -307,7 +307,7 @@ using WrapperIntList = Pjfb.Networking.App.Request.WrapperIntList;
         /// <summary>スロット数</summary>
         public int SlotCount{get{return DeckUtility.GetDeckSlotCount(deckType);}}
 
-
+        
         public bool IsEnableDeck(bool isCheckFriend = true)
         {
             // トレーニングの場合はフレンド必須
@@ -367,8 +367,17 @@ using WrapperIntList = Pjfb.Networking.App.Request.WrapperIntList;
                 long id = ids[i];
                 if(id == DeckUtility.EmptyDeckSlotId)continue;
                 if(GetMemberType(i) == DeckMemberType.UEquipment)continue;
+                
                 // parentId
                 long parentId = CharacterUtility.UserCharIdToParentId(id);
+                
+                // cardType
+                var uChara = UserDataManager.Instance.chara.Find(id);
+                var cardType = uChara.MChara.cardType;
+                
+                // アドバイザーと対象の重複が許容されている
+                if (cardType == CardType.Adviser && DeckUtility.AllowDuplicateAdviser()) continue;
+                
                 // メンバーに
                 if(parentCharacterId == parentId)return false;
                 // フレンドに同じキャラがいる
@@ -652,6 +661,28 @@ using WrapperIntList = Pjfb.Networking.App.Request.WrapperIntList;
                     // 同じキャラの場合は外す
                     if(canDuplicate == false)
                     {
+                        // トレーニングデッキだけの特殊設定
+                        // アドバイザーの親キャラ重複許容設定が有効の場合
+                        if (deckType == DeckType.Training)
+                        {
+                            if (DeckUtility.AllowDuplicateAdviser())
+                            {
+                                if (memberId != DeckUtility.EmptyDeckSlotId)
+                                {
+                                    // 既存で入っている
+                                    var memberChara = UserDataManager.Instance.chara.Find(memberId);
+                                    // 追加しようとしている
+                                    var uChara = UserDataManager.Instance.chara.Find(uCharId);
+                                    
+                                    // CardTypeが異なる入れ替えはスワップしない(Adviser ⇆ Character)
+                                    if (memberChara.CardType != uChara.CardType)
+                                    {
+                                        continue;
+                                    }
+                                }
+                            }
+                        }
+                        
                         if(memberId != DeckUtility.EmptyDeckSlotId && parentId == GetParentId(memberId, i))
                         {
                             MemberIdList[i].l[CharaIdIndex] = DeckUtility.EmptyDeckSlotId;
@@ -1160,6 +1191,13 @@ using WrapperIntList = Pjfb.Networking.App.Request.WrapperIntList;
                 result.Add(slots[i].index);
             }
             return result.ToArray();
+        }
+        
+        /// <summary>トレーニングデッキにおいて、アドバイザーと育成・サポート選手の重複を許可する設定が入っているか</summary>
+        public static bool AllowDuplicateAdviser()
+        {
+            // サーバー側で1301指定なので合わせる。カスタムしたい場合は仕組みから再検討が良い
+            return ConfigManager.Instance.allowDuplicateTrainingDeckCharaUseTypeList.Contains(DeckType.Adviser);
         }
 
         public static async UniTask<DeckListData> GetBattleDeck()

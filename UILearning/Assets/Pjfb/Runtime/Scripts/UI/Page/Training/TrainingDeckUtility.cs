@@ -378,11 +378,11 @@ namespace Pjfb
             // ステータスを持たないキャラの枠を埋める
             foreach (UserDataChara chara in noStatusCharaList)
             {
-                // Idをチェック
-                if(parentMCharIdList.Contains(chara.ParentMCharaId)) continue;
                 switch (chara.CardType)
                 {
                     case CardType.Adviser:
+                        // 重複が許可されていない設定では親キャラ一致を弾く
+                        if (DeckUtility.AllowDuplicateAdviser() == false && parentMCharIdList.Contains(chara.ParentMCharaId)) continue;
                         // アドバイザー
                         if (adviserCount >= adviserIndex.Length) continue;
                         // 結果に追加

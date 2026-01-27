@@ -585,6 +585,13 @@ namespace Pjfb.Training
            return type == TrainingScenarioType.Concentration || type == TrainingScenarioType.Flow;
         }
         
+        /// <summary> インスピレーションブーストが有効か？ </summary>
+        public bool EnableInspirationBoost()
+        {
+           TrainingScenarioType type = MasterManager.Instance.trainingScenarioMaster.FindData(Pending.mTrainingScenarioId).ScenarioType;  
+           return type == TrainingScenarioType.Concentration;
+        }
+        
         /// <summary>インスピレーションIdを取得</summary>
         public List<long> GetInspirationIds(long mTrainingCardId, long mCharaId)
         {

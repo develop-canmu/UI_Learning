@@ -60,7 +60,9 @@ namespace Pjfb.InGame
             toActivateSlider.value = 0.0f;
             timeLimitSlider.value = 1.0f;
             updateObservable = gameObject.UpdateAsObservable().Subscribe(_ => UpdateSlider()).AddTo(gameObject);
-
+            // ピースハンドルのサイズをデフォルトにリセット
+            handleImage.transform.localScale = Vector3.one;
+            
             // スキルの種類によってアニメーションを切り替える
             animator.SetTrigger(GetAnimTrigger(abilityId));
             toActivateSlider.onValueChanged.AddListener(OnActivateSliderValueChanged);

@@ -89,18 +89,14 @@ namespace Pjfb.Training
             TrainingCardCharaMasterObject baseCard = MasterManager.Instance.trainingCardCharaMaster.values.FirstOrDefault(
                 x => x.mCharaId == mainArguments.TrainingCharacter.MCharId && x.mTrainingCardId == cardUnionData.baseTrainingData.id);
             List<TrainingCardCharaMasterObject> selectedCardList = new List<TrainingCardCharaMasterObject> { baseCard };
-            // ヘッダー付きのグループとしてスクロールデータに追加する
+            
             // 一旦配列に変換
             TrainingTrainingCardData[] baseTrainingCardList = { cardUnionData.baseTrainingData };
+            // 選出された育成選手のリストを、ヘッダー付きのグループとしてスクロールデータに追加する
             AddCardGroup(scrollDataList, selectedCardList, SelectedCardHeaderTitleKey, baseTrainingCardList, cardUnionData.baseTrainingData.id, displayEnhanceUIFlags);
             
-            // カードユニオン対象の練習メニューカード情報をリスト化
-            List<TrainingCardCharaMasterObject> cardUnionList = sortedPracticeCardList
-                // カードユニオンの対象カードのみ
-                .Where(card => card.mTrainingCardId != mainArguments.TrainingCardId)
-                .ToList();
-            // ヘッダー付きのグループとしてスクロールデータに追加する
-            AddCardGroup(scrollDataList, cardUnionList, cardUnionTargetHeaderTitleKey, cardUnionData.trainingCardList, cardUnionData.baseTrainingData.id, displayEnhanceUIFlags);
+            // カードユニオンの対象のリストを、ヘッダー付きのグループとしてスクロールデータに追加する
+            AddCardGroup(scrollDataList, sortedPracticeCardList, cardUnionTargetHeaderTitleKey, cardUnionData.trainingCardList, cardUnionData.baseTrainingData.id, displayEnhanceUIFlags);
             return scrollDataList;
         }
         

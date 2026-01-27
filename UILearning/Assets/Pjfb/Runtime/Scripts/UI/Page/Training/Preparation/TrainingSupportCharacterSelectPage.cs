@@ -273,7 +273,15 @@ namespace Pjfb.Training
             List<long> disableIds = new List<long>();
             // トレーニングキャラ
             long trainingCharacterId = CharacterUtility.UserCharIdToParentId(Arguments.TrainingUCharId);
-            disableIds.Add(trainingCharacterId);
+
+            // アドバイザー重複許可設定・アドバイザー選択時か
+            bool isAdviserDuplicateAllowed = DeckUtility.AllowDuplicateAdviser() && Arguments.CharacterMemberType == TrainingDeckMemberType.Adviser;
+            // 育成対象キャラを選択できないように
+            if (isAdviserDuplicateAllowed == false)
+            {
+                disableIds.Add(trainingCharacterId);
+            }
+
             // 制限キャラ
             List<long> limitedIds = new List<long>();
             
@@ -368,7 +376,12 @@ namespace Pjfb.Training
                     foreach(long id in deckData.GetCharacterMemberIds())
                     {
                         if(id == DeckUtility.EmptyDeckSlotId)continue;
-                        disableIds.Add(CharacterUtility.UserCharIdToParentId(id));
+                        
+                        var uChara = UserDataManager.Instance.chara.Find(id);
+                        // アドバイザーの重複が許可されている場合はスルー
+                        if (uChara.CardType == CardType.Adviser && DeckUtility.AllowDuplicateAdviser()) continue;
+                        
+                        disableIds.Add(CharacterUtility.CharIdToParentId(uChara.charaId));
                     }
                     
                     // 編成制限取得
@@ -629,12 +642,6 @@ namespace Pjfb.Training
                     long[] selectedCharacterIds = deckData.GetMemberIds(DeckSlotCardType.Adviser);
                     userAdviserScroll.SetSelectedCharacterIds(selectedCharacterIds);
                     userAdviserScroll.SetFixedCharacterIds(selectedCharacterIds);
-                    
-                    // フレンドのキャラを選択不可に
-                    if(deckData.Friend != null)
-                    {
-                        disableIds.Add( CharacterUtility.CharIdToParentId(deckData.Friend.mCharaId));
-                    }
                     
                     // トレーニング対象のキャラ
                     userAdviserScroll.TrainingCharacterId = trainingCharacterId;

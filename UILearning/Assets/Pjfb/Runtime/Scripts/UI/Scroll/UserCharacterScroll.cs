@@ -237,9 +237,13 @@ namespace Pjfb
                 // トレーニング育成キャラ
                 if (TrainingCharacterId == parentId)
                 {
-                    message = StringValueAssetLoader.Instance["training.training_character"];
-                    description = StringValueAssetLoader.Instance[$"training.select_page_message{(long)cardType}"];
-                    filterColor = ColorValueAssetLoader.Instance["character.filter.default"];
+                    // アドバイザーの場合、重複編成不可なら選択不可にする
+                    if (DeckUtility.AllowDuplicateAdviser() == false)
+                    {
+                        message = StringValueAssetLoader.Instance["training.training_character"];
+                        description = StringValueAssetLoader.Instance[$"training.select_page_message{(long)cardType}"];
+                        filterColor = ColorValueAssetLoader.Instance["character.filter.default"];
+                    }
                 }
                 // 編成制限対象だった場合制限をかける
                 else if (limitedCharacterIds.Contains(charaData.charaId))

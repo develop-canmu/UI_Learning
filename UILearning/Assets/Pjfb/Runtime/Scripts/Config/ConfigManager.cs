@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Pjfb.Networking.App.Request;
 using UnityEngine;
 
@@ -36,6 +37,8 @@ namespace Pjfb
         
         /// <summary>ガチャ演出をスキップ可能になるまでの時間</summary>
         public float gachaEffectTimeUntilSkippable { get; private set; }
+        /// <summary>トレーニングで親キャラ重複可能なm_deck_format_useのuseType</summary>
+        public HashSet<DeckType> allowDuplicateTrainingDeckCharaUseTypeList { get; private set; }
         
         /// <summary>更新</summary>
         public void UpdateByResponseData(NativeApiConf config)
@@ -53,6 +56,8 @@ namespace Pjfb
             changeUserNamePointValue = config.changeUserNameMPointValue;
             guildSearchParticipationPriorityTypeList = config.guildSearchParticipationPriorityTypeList;
             gachaEffectTimeUntilSkippable = config.gachaEffectTimeUntilSkippable;
+            // 使いやすさのため型変換して格納
+            allowDuplicateTrainingDeckCharaUseTypeList = config.allowDuplicateTrainingDeckCharaUseTypeList.Select(t => (DeckType)t).ToHashSet();
 
             Master.MasterManager.Instance.charaMaster.RemoveMainCharaId(mainMCharaId1, mainMCharaId2);
             
