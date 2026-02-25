@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d168f9ea8ff67c4428ea955580551fab
+guid: 203d4ee565e6ac748a2e38934c61bb2f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: training_num_statusbonus_011.png_0
+      name: training_num_statusbonus_004_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8027d4605a320114daef8e757d46f6e5
-      internalID: -679764573
+      spriteID: c4c3ff1d755feb347b85e6dd4c2aeece
+      internalID: 953876252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_num_statusbonus_011.png_1
+      name: training_num_statusbonus_004_1
       rect:
         serializedVersion: 2
         x: 160
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c96710bf11b445439afb8b12c0cb83b
-      internalID: -1858590918
+      spriteID: 8a07061e71abf3b40b541832e1c47440
+      internalID: -1256929447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_num_statusbonus_011.png_2
+      name: training_num_statusbonus_004_2
       rect:
         serializedVersion: 2
         x: 320
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04c135c9fc42b7e4599a42e848ec1d6c
-      internalID: 516974810
+      spriteID: 230203180384d844ab01ed5ea0ceb59e
+      internalID: -1938194654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_num_statusbonus_011.png_3
+      name: training_num_statusbonus_004_3
       rect:
         serializedVersion: 2
         x: 480
@@ -178,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16164f4a33133e440a93ee1c7287a222
-      internalID: 1834426377
+      spriteID: 45c5c74522d14d24dba7cd0022658c32
+      internalID: 2030022869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_num_statusbonus_011.png_4
+      name: training_num_statusbonus_004_4
       rect:
         serializedVersion: 2
         x: 640
@@ -200,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9b2c925e9f33a74c89a27a6114ada8e
-      internalID: 1497245424
+      spriteID: d7ebae4e6f552e948b77d8dde165110d
+      internalID: 1223440385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_num_statusbonus_011.png_5
+      name: training_num_statusbonus_004_5
       rect:
         serializedVersion: 2
         x: 800
@@ -222,36 +222,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cba209a6fe33184aa01b8ca12b93d30
-      internalID: 1079762406
+      spriteID: e894dad65f904844ea228e2db1b25adb
+      internalID: 901939374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_num_statusbonus_011.png_6
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 256
-        width: 160
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2a133eb4d33a5448a37c1acbe968152
-      internalID: 1146619957
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: training_num_statusbonus_011.png_7
+      name: training_num_statusbonus_004_6
       rect:
         serializedVersion: 2
         x: 0
@@ -266,14 +244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a1e75d18add543428d4b7b9631b0a1e
-      internalID: -1720722240
+      spriteID: 1bf1e271d2415dd4aad6f9810ad69e57
+      internalID: 2124171730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_num_statusbonus_011.png_8
+      name: training_num_statusbonus_004_7
       rect:
         serializedVersion: 2
         x: 160
@@ -288,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a978f9600e89f145bfe40ff6adb1e5a
-      internalID: -577146766
+      spriteID: 63e699076afd6bf43a390893e9c32135
+      internalID: 733256897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_num_statusbonus_011.png_9
+      name: training_num_statusbonus_004_8
       rect:
         serializedVersion: 2
         x: 320
@@ -310,14 +288,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8ce9fa6f8009844a948c9eb1df82341
-      internalID: 1588336344
+      spriteID: 11ce55062755d514bbeb1c03a162421c
+      internalID: 1754022754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_num_statusbonus_011.png_10
+      name: training_num_statusbonus_004_9
       rect:
         serializedVersion: 2
         x: 480
@@ -332,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ffe3be5f4b025c47894a57eece672de
-      internalID: 1309906159
+      spriteID: 66a8d209976ddc445b31a1eb3017a7e5
+      internalID: -279720507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_num_statusbonus_011.png_11
+      name: training_num_statusbonus_004_10
       rect:
         serializedVersion: 2
         x: 640
@@ -354,14 +332,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76367b6001247554ca85cd745f6a497f
-      internalID: 1971940050
+      spriteID: 9ddb232431863e840a39e1af2e358afe
+      internalID: -1178051132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_num_statusbonus_011.png_12
+      name: training_num_statusbonus_004_11
       rect:
         serializedVersion: 2
         x: 800
@@ -376,8 +354,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1b69db052cbfe94bb5848248500f1af
-      internalID: -300599379
+      spriteID: e2151abe517d6af4da55223dff0c9c0d
+      internalID: -1515069123
       vertices: []
       indices: 
       edges: []
@@ -386,7 +364,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1e22c0878236c114cb1a60ed92361f2a
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -396,19 +374,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      training_num_statusbonus_011.png_0: -679764573
-      training_num_statusbonus_011.png_1: -1858590918
-      training_num_statusbonus_011.png_10: 1309906159
-      training_num_statusbonus_011.png_11: 1971940050
-      training_num_statusbonus_011.png_12: -300599379
-      training_num_statusbonus_011.png_2: 516974810
-      training_num_statusbonus_011.png_3: 1834426377
-      training_num_statusbonus_011.png_4: 1497245424
-      training_num_statusbonus_011.png_5: 1079762406
-      training_num_statusbonus_011.png_6: 1146619957
-      training_num_statusbonus_011.png_7: -1720722240
-      training_num_statusbonus_011.png_8: -577146766
-      training_num_statusbonus_011.png_9: 1588336344
+      training_num_statusbonus_004_0: 953876252
+      training_num_statusbonus_004_1: -1256929447
+      training_num_statusbonus_004_10: -1178051132
+      training_num_statusbonus_004_11: -1515069123
+      training_num_statusbonus_004_2: -1938194654
+      training_num_statusbonus_004_3: 2030022869
+      training_num_statusbonus_004_4: 1223440385
+      training_num_statusbonus_004_5: 901939374
+      training_num_statusbonus_004_6: 2124171730
+      training_num_statusbonus_004_7: 733256897
+      training_num_statusbonus_004_8: 1754022754
+      training_num_statusbonus_004_9: -279720507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

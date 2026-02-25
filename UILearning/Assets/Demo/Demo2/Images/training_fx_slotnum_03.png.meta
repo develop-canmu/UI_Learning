@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a7e81eaaa1e2a90489aed74aed7b055d
+guid: df64892737a9f1d4dab8a7c3f822f6e5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: training_fx_glass.png_0
+      name: training_fx_slotnum_03_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
-        width: 256
-        height: 256
+        y: 270
+        width: 633
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2f71a5676fb654479361b4f3e77c2e9
-      internalID: 320621220
+      spriteID: 4bb1af1a6ff6e6e4f894bbc36bea2ecb
+      internalID: 1274482391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_fx_glass.png_1
+      name: training_fx_slotnum_03_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 633
+        y: 270
+        width: 633
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3caff7d9c8693224e85b7b8be81578e1
-      internalID: 1647148643
+      spriteID: f977defc1207f0748998cd43d00bb76f
+      internalID: -78910873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_fx_glass.png_2
+      name: training_fx_slotnum_03_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 256
-        height: 256
+        width: 633
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 213ab7fc202b13847b80f0df6989b1e7
-      internalID: 1903046501
+      spriteID: 748778e384e34604a85f0048f721cf56
+      internalID: -1037814298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_fx_glass.png_3
+      name: training_fx_slotnum_03_3
       rect:
         serializedVersion: 2
-        x: 256
+        x: 633
         y: 0
-        width: 256
-        height: 256
+        width: 633
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d51de6ad789e5144583dfdeb7337c2dc
-      internalID: -1051256720
+      spriteID: 85aba47495ee93146a1fb5d95c6166a8
+      internalID: -1187843254
       vertices: []
       indices: 
       edges: []
@@ -198,10 +198,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      training_fx_glass.png_0: 320621220
-      training_fx_glass.png_1: 1647148643
-      training_fx_glass.png_2: 1903046501
-      training_fx_glass.png_3: -1051256720
+      training_fx_slotnum_03_0: 1274482391
+      training_fx_slotnum_03_1: -78910873
+      training_fx_slotnum_03_2: -1037814298
+      training_fx_slotnum_03_3: -1187843254
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: training_fx_slotnum_02.png_0
+      name: training_fx_slotnum_02_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,36 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 119e2c72611ab9b4c8470f41c3f57e6f
-      internalID: -1921619109
+      spriteID: a226f4f96aef0fa44b221fedf42d116e
+      internalID: -911347377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_fx_slotnum_02.png_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 500
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b2b12cde817bac6438790c3b2bd4eba0
-      internalID: 1466206234
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: training_fx_slotnum_02.png_2
+      name: training_fx_slotnum_02_1
       rect:
         serializedVersion: 2
         x: 500
@@ -156,14 +134,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98f1579197de08446b1aed1d13ca5385
-      internalID: 519691795
+      spriteID: 9093d4338f74ee5408b26076b19351da
+      internalID: -271080178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_fx_slotnum_02.png_3
+      name: training_fx_slotnum_02_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4adbc2be2281e458838cce078d6d9b
+      internalID: 604329190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: training_fx_slotnum_02_3
       rect:
         serializedVersion: 2
         x: 500
@@ -178,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7433d8c37b32e74db62c4f3c35768b8
-      internalID: -1871621376
+      spriteID: 467526838e252d74086183a3a1228576
+      internalID: 78382022
       vertices: []
       indices: 
       edges: []
@@ -198,10 +198,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      training_fx_slotnum_02.png_0: -1921619109
-      training_fx_slotnum_02.png_1: 1466206234
-      training_fx_slotnum_02.png_2: 519691795
-      training_fx_slotnum_02.png_3: -1871621376
+      training_fx_slotnum_02_0: -911347377
+      training_fx_slotnum_02_1: -271080178
+      training_fx_slotnum_02_2: 604329190
+      training_fx_slotnum_02_3: 78382022
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
