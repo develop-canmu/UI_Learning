@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1b8433e42eb1f3f4b8646e9da9fe6272
+guid: ac3ce6dbf6d80e445865f35fa4c55465
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: training_deco_glass_3_0
+      name: training_deco_glass_4_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96c022ea833c77f41a35aa7357e2f5c9
-      internalID: -1814908035
+      spriteID: 1c95907b50d525e4581826a2a711d600
+      internalID: 1813150643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_deco_glass_3_1
+      name: training_deco_glass_4_1
       rect:
         serializedVersion: 2
         x: 495
@@ -134,14 +134,58 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5b1b5b9cc671904ba9904e34300a8dc
-      internalID: 12774892
+      spriteID: 90f5fe8f7319bb641ab55a2ce4ba9ef7
+      internalID: 57631729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_deco_glass_3_2
+      name: training_deco_glass_4_2
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 556
+        width: 495
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a10682ccf4211c4db6c5be6b21c689e
+      internalID: 1271754979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: training_deco_glass_4_3
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 556
+        width: 495
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54b08401b3ec1246b818e90e113d659
+      internalID: 330671773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: training_deco_glass_4_4
       rect:
         serializedVersion: 2
         x: 0
@@ -156,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe5546c7c20e1af4088d7c62411b3d69
-      internalID: -679935245
+      spriteID: 9d9e8d4c67b4a514c8a60ac79616b7ba
+      internalID: -1505804170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: training_deco_glass_3_3
+      name: training_deco_glass_4_5
       rect:
         serializedVersion: 2
         x: 495
@@ -178,8 +222,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a03436d98bd04544babccf36e77e0f5
-      internalID: -1090314591
+      spriteID: c883b68712dcb0f4e9154e2896ac185b
+      internalID: -1074822222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: training_deco_glass_4_6
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 0
+        width: 495
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee49fe1b3de645408293b0e4065770a
+      internalID: 1798324100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: training_deco_glass_4_7
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 0
+        width: 495
+        height: 556
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f66d2f7004026e4bac00dfcf637fbdc
+      internalID: 17126203
       vertices: []
       indices: 
       edges: []
@@ -188,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: fbf872a33facb164293a8751ef116161
+    spriteID: e7be25994b683e74c911a87cae638ce9
     internalID: 0
     vertices: []
     indices: 
@@ -198,10 +286,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      training_deco_glass_3_0: -1814908035
-      training_deco_glass_3_1: 12774892
-      training_deco_glass_3_2: -679935245
-      training_deco_glass_3_3: -1090314591
+      training_deco_glass_4_0: 1813150643
+      training_deco_glass_4_1: 57631729
+      training_deco_glass_4_2: 1271754979
+      training_deco_glass_4_3: 330671773
+      training_deco_glass_4_4: -1505804170
+      training_deco_glass_4_5: -1074822222
+      training_deco_glass_4_6: 1798324100
+      training_deco_glass_4_7: 17126203
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
